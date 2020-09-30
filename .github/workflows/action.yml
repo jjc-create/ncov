@@ -23,7 +23,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r ./requirements.txt
-    - name: Levick
+    - name: JJC
       run: |
         python ./upload.py -n 1 -u ${{ secrets.NAME_NCOV }} -p ${{ secrets.PSW_NCOV }} -f ./data/upload.txt 
 #----find username and password in github secrets, please add yours to github secrets if newly forked----
